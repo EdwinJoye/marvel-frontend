@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./Pages/Home";
+import Comics from "./Pages/Comics";
+import SignUp from "./Pages/Signup";
+import LogIn from "./Pages/LogIn";
+import Personnages from "./Pages/Personnages";
 
 function App() {
+  const [searchBar, setSearchBar] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header setSearchBar={setSearchBar}></Header>
+      <Routes>
+        <Route path="/" element={<Home searchBar={searchBar}></Home>}></Route>
+        <Route
+          path="/comics"
+          element={<Comics searchBar={searchBar}></Comics>}
+        ></Route>
+        <Route path="/characters" element={<Personnages></Personnages>}></Route>
+        <Route path="/signup" element={<SignUp></SignUp>}></Route>
+        <Route path="/LogIn" element={<LogIn></LogIn>}></Route>
+      </Routes>
+    </Router>
   );
 }
 
