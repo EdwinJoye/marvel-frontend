@@ -9,6 +9,7 @@ const CommicList = ({ searchBar }) => {
   const [page, setPage] = useState(1);
   const limit = 10;
 
+  console.log(setPage);
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
@@ -27,7 +28,6 @@ const CommicList = ({ searchBar }) => {
     <div className="container">
       <div className="boxComics">
         {data.comics.map((item, index) => {
-          const keys = Object.keys(item);
           return (
             item.thumbnail.path !==
               "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && (
