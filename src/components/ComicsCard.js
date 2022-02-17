@@ -16,7 +16,7 @@ const ComicsCard = ({ item }) => {
 
           <div>
             <p className="nomCharacters"> {item.name}</p>
-            <p className="descriptionCharacters"> {item.description} </p>
+            <div className="descriptionCharacters"> {item.description} </div>
           </div>
         </Link>
       </div>

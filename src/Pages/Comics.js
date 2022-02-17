@@ -35,18 +35,23 @@ const Comics = ({ searchBar }) => {
         })}
         ;
       </div>
-      <button
-        className="buttonPagePrécédenteSuivante"
-        onClick={() => setPage(page - 1)}
-      >
-        Page précédente
-      </button>
-      <button
-        className="buttonPagePrécédenteSuivante"
-        onClick={() => setPage(page + 1)}
-      >
-        Page suivante
-      </button>
+      <div className="boxButtonPrécédenteSuivante">
+        <button
+          className="buttonPagePrécédenteSuivante"
+          onClick={() => setPage(page - 1)}
+        >
+          Page précédente
+        </button>
+        <div className="boxEntreButtons"></div>
+        <button
+          className="buttonPagePrécédenteSuivante"
+          onClick={() => {
+            setPage(page + 1);
+          }}
+        >
+          Page suivante
+        </button>
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Personnages = (searchBar) => {
   const [isLoading, setIsloading] = useState(true);
   const [data, setData] = useState();
   const [page, setPage] = useState(1);
-  const limit = 10;
+  const limit = 20;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -34,18 +34,23 @@ const Personnages = (searchBar) => {
         })}
         ;
       </div>
-      <button
-        className="buttonPagePrécédenteSuivante"
-        onClick={() => setPage(page - 1)}
-      >
-        Page précédente
-      </button>
-      <button
-        className="buttonPagePrécédenteSuivante"
-        onClick={() => setPage(page + 1)}
-      >
-        Page suivante
-      </button>
+      <div className="boxButtonPrécédenteSuivante">
+        <button
+          className="buttonPagePrécédenteSuivante"
+          onClick={() => setPage(page - 1)}
+        >
+          Page précédente
+        </button>
+        <div className="boxEntreButtons"></div>
+        <button
+          className="buttonPagePrécédenteSuivante"
+          onClick={() => {
+            setPage(page + 1);
+          }}
+        >
+          Page suivante
+        </button>
+      </div>
     </div>
   );
 };

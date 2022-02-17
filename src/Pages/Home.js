@@ -13,12 +13,12 @@ const Home = ({ searchBar }) => {
         <Link to="/comics">
           <div className="boxTitre">Comics</div>
           <div>
-            <img className="imagesHomes" src={character} alt="" />
+            <img className="imagesHome" src={comics} alt="" />
           </div>
         </Link>
         <Link to="/characters">
           <div className="boxTitre">Characters</div>
-          <img className="imagesHomes" src={comics} alt="" />
+          <img className="imagesHome" src={character} alt="" />
         </Link>
         <Link to="favoris">
           <div className="boxTitre">Favoris</div>
