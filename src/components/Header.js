@@ -4,7 +4,7 @@ import Logo from "../img/Logo.svg.png";
 const Header = ({ setSearchBar }) => {
   console.log(Navigate);
   return (
-    <div className="container">
+    <div>
       <header className="boxHeader">
         <Link to="/">
           <img className="logo" src={Logo} alt="" />

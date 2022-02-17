@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import ComicsCard from "../components/ComicsCard";
 
 const Comics = ({ searchBar }) => {
   const [data, setData] = useState();
@@ -15,6 +16,7 @@ const Comics = ({ searchBar }) => {
       );
       setData(response.data);
       setIsloading(false);
+      console.log("passe 1");
     };
 
     fetchData();
@@ -25,14 +27,12 @@ const Comics = ({ searchBar }) => {
     <p>En cours de chargement</p>
   ) : (
     <div className="container">
-      <div className="boxImage">
+      <div className="boxComics">
         {data.results.map((item, index) => {
           return (
-            <img
-              className="images"
-              src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
-              key={index}
-            />
+            <div key={index}>
+              <ComicsCard item={item}></ComicsCard>
+            </div>
           );
         })}
         ;
