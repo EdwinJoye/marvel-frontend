@@ -1,7 +1,4 @@
-import { Navigate } from "react-router-dom";
-
-const Footer = ({ setSearchBar }) => {
-  console.log(Navigate);
+const Footer = () => {
   return (
     <div className="footer">
       <footer></footer>

@@ -10,12 +10,13 @@ const ComicsCard = ({ item }) => {
             <img
               className="torn-paperImagesCharacters"
               src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
+              alt="charac"
             />
           </div>
 
           <div>
             <p className="nomCharacters"> {item.name}</p>
-            <p className="descriptionCharacters"> {item.description}</p>
+            <p className="descriptionCharacters"> {item.description} </p>
           </div>
         </Link>
       </div>

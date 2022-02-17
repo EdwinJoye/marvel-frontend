@@ -7,6 +7,7 @@ import Comics from "./Pages/Comics";
 import SignUp from "./Pages/Signup";
 import LogIn from "./Pages/LogIn";
 import Personnages from "./Pages/Personnages";
+import ComicList from "./Pages/ComicList";
 import { useState } from "react";
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
         ></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/LogIn" element={<LogIn></LogIn>}></Route>
+        <Route
+          path="/character/:id"
+          element={<ComicList searchBar={searchBar}></ComicList>}
+        ></Route>
       </Routes>
       <Footer></Footer>
     </Router>

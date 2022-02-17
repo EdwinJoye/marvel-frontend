@@ -7,7 +7,6 @@ const Comics = ({ searchBar }) => {
   const [isLoading, setIsloading] = useState(true);
   const [page, setPage] = useState(1);
   const limit = 20;
-  console.log(searchBar);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +15,6 @@ const Comics = ({ searchBar }) => {
       );
       setData(response.data);
       setIsloading(false);
-      console.log("passe 1");
     };
 
     fetchData();

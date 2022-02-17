@@ -1,8 +1,7 @@
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../img/Logo.svg.png";
 
 const Header = ({ setSearchBar }) => {
-  console.log(Navigate);
   return (
     <div>
       <header className="boxHeader">
@@ -14,7 +13,6 @@ const Header = ({ setSearchBar }) => {
           type="text"
           placeholder="Recherche des articles"
           onChange={(event) => {
-            console.log(event.target.value);
             setSearchBar(event.target.value);
           }}
         />

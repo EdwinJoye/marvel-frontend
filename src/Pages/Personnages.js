@@ -6,15 +6,13 @@ const Personnages = (searchBar) => {
   const [isLoading, setIsloading] = useState(true);
   const [data, setData] = useState();
   const [page, setPage] = useState(1);
-  // const limit = 20;
-  // console.log(searchBar);
+  const limit = 10;
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `http://localhost:3001/characters?name=${searchBar}`
+        `http://localhost:3001/characters?name=${searchBar}&limit=${limit}&page=${page}`
       );
-      console.log({ response });
       setData(response.data);
       setIsloading(false);
     };
