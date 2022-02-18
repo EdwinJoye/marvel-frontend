@@ -1,10 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Comics from "./Pages/Comics";
-import SignUp from "./Pages/Signup";
+import Signup from "./Pages/Signup";
 import LogIn from "./Pages/LogIn";
 import Personnages from "./Pages/Personnages";
 import ComicList from "./Pages/ComicList";
@@ -25,14 +24,13 @@ function App() {
           path="/characters"
           element={<Personnages searchBar={searchBar}></Personnages>}
         ></Route>
-        <Route path="/signup" element={<SignUp></SignUp>}></Route>
+        <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/LogIn" element={<LogIn></LogIn>}></Route>
         <Route
           path="/character/:id"
           element={<ComicList searchBar={searchBar}></ComicList>}
         ></Route>
       </Routes>
-      <Footer></Footer>
     </Router>
   );
 }

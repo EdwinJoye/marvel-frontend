@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header3 from "../img/Header3.jpg";
 import character from "../img/characters.jpg";
 import comics from "../img/comics.jpg";
+import Footer from "../components/Footer";
 
 const Home = ({ searchBar }) => {
   // console.log(data.results);
@@ -24,6 +25,7 @@ const Home = ({ searchBar }) => {
           <div className="boxTitre">Favoris</div>
         </Link>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

@@ -3,21 +3,24 @@
   box-sizing: border-box;
 }
 .body {
-  /* background-color: grey; */
+  height: 1200px;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   max-width: 1500px;
   margin: 0 auto;
 }
 html {
-  background-color: grey;
+  background-color: transparent;
+  background-image: url(img/fond.jpg);
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
 }
 body {
   color: black;
-  background-color: white;
+  background-color: transparent;
   background-image: url(img/fond.jpg);
 }
 /*/ //////////////////   HEADER  ////////////////////*/
@@ -28,6 +31,11 @@ body {
   border-bottom: white 2px solid;
   align-items: center;
   background-color: black;
+  justify-content: space-between;
+}
+.boxLogoSearch {
+  display: flex;
+  align-items: center;
 }
 .logo {
   width: 200px;
@@ -38,6 +46,24 @@ body {
 }
 .buttonSearch {
   background-color: aliceblue;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+.boxButtonSignInLogIn {
+  display: flex;
+}
+.buttonSignInLogIn {
+  background-color: #ee161e;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  width: 100px;
+
+  margin-right: 30px;
 }
 
 /*/ //////////////////   HOME  ////////////////////*/
@@ -237,7 +263,7 @@ body {
 .buttonPagePrécédenteSuivante:hover {
   cursor: pointer;
 }
-/*/ //////////////////   COMICARD ////////////////////*/
+/*/ ////////////////// COMICARD ////////////////////*/
 .boxComicard {
   padding: 20px;
   width: 320px;
@@ -388,6 +414,58 @@ body {
   padding: 20px;
   height: 500px;
   width: 100%;
+}
+
+/*/ //////////////////   SIGNUP  ////////////////////*/
+.pageSignUp {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: antiquewhite; */
+}
+.h1SignUp {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.boxSignUp {
+  width: 320px;
+  height: 350px;
+  padding: 30px;
+  border-radius: 3px;
+  margin-top: 200px;
+  background-color: grey;
+}
+.boxSignupEnsemble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: transparent;
+}
+.cellules {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.buttonInscrisption {
+  margin-top: 10px;
+  background-color: #ee161e;
+  height: 30px;
+  width: 90px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+.buttonInscrisption:hover {
+  box-shadow: 0 0 10px black;
 }
 
 /*/ //////////////////   FOOTER  ////////////////////*/

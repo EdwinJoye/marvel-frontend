@@ -5,20 +5,27 @@ const Header = ({ setSearchBar }) => {
   return (
     <div>
       <header className="boxHeader">
-        <Link to="/">
-          <img className="logo" src={Logo} alt="" />
-        </Link>
-        <input
-          className="buttonSearch"
-          type="text"
-          placeholder="Recherche des articles"
-          onChange={(event) => {
-            setSearchBar(event.target.value);
-          }}
-        />
-        <Link to="/login">
-          <button>Log In</button>
-        </Link>
+        <div className="boxLogoSearch">
+          <Link to="/">
+            <img className="logo" src={Logo} alt="" />
+          </Link>
+          <input
+            className="buttonSearch"
+            type="text"
+            placeholder="Search"
+            onChange={(event) => {
+              setSearchBar(event.target.value);
+            }}
+          />
+        </div>
+        <div>
+          <Link to="/signup">
+            <button className="buttonSignInLogIn">Sign Up</button>
+          </Link>
+          <Link to="/login">
+            <button className="buttonSignInLogIn">Log In</button>
+          </Link>
+        </div>
       </header>
     </div>
   );
