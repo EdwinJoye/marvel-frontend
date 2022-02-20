@@ -1,31 +1,28 @@
 import { Link } from "react-router-dom";
-import Header3 from "../img/Header3.jpg";
-import character from "../img/characters.jpg";
-import comics from "../img/comics.jpg";
-import Footer from "../components/Footer";
+import Caroussel1 from "../components/Caroussel1";
+import Caroussel2 from "../components/Caroussel2";
 
 const Home = ({ searchBar }) => {
   // console.log(data.results);
   return (
-    <div className=" body">
-      {" "}
-      <img className="Banner" src={Header3} alt="" />{" "}
-      <div className="boxesHome">
-        <Link to="/comics">
-          <div className="boxTitre">Comics</div>
-          <div>
-            <img className="imagesHome" src={comics} alt="" />
+    <div className="boxesHome">
+      <Link to="/comics">
+        <div>
+          <Caroussel1></Caroussel1>
+          <div className="text">
+            {" "}
+            <span className="sousText">Comics</span>
           </div>
-        </Link>
-        <Link to="/characters">
-          <div className="boxTitre">Characters</div>
-          <img className="imagesHome" src={character} alt="" />
-        </Link>
-        <Link to="favoris">
-          <div className="boxTitre">Favoris</div>
-        </Link>
-      </div>
-      <Footer></Footer>
+        </div>
+      </Link>
+      <Link to="/characters">
+        <div>
+          <Caroussel2></Caroussel2>
+          <div className="text">
+            <span className="sousText">Characters</span>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };

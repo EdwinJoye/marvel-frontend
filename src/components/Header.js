@@ -18,12 +18,22 @@ const Header = ({ setSearchBar }) => {
             }}
           />
         </div>
-        <div>
+        <div className="boxButtonSignInLogIn">
           <Link to="/signup">
-            <button className="buttonSignInLogIn">Sign Up</button>
+            <button
+              href="#"
+              className="buttonSignInLogIn buttonSignInLogIn:before buttonSignInLogIn:after"
+            >
+              Sign Up
+            </button>
           </Link>
           <Link to="/login">
-            <button className="buttonSignInLogIn">Log In</button>
+            <button
+              href="#"
+              className="buttonSignInLogIn buttonSignInLogIn:before buttonSignInLogIn:after"
+            >
+              Log In
+            </button>
           </Link>
         </div>
       </header>

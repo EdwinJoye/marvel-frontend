@@ -49,15 +49,9 @@ const Signup = () => {
             type="password"
             placeholder="Mot de passe"
           />
-          {/* <input
-            onChange={(event) => setConfirmPassword(event.target.value)}
-            className="cellules"
-            type="password"
-            placeholder="Confirmez le mot de passe"
-          /> */}
-          <button className="buttonInscrisption" type="submit">
+          <div className="buttonInscrisption" href="#">
             S'inscrire
-          </button>
+          </div>
         </form>
       </div>
     </div>
