@@ -9,7 +9,7 @@ import img8 from "../img/Comics/5aa0512899ebe.jpg";
 import img9 from "../img/Comics/5aa052400468e.jpg";
 import img10 from "../img/Comics/5aa052598a31d.jpg";
 
-const Caroussel1 = ({}) => {
+const Caroussel1 = () => {
   // console.log(data.results);
   return (
     <div class="boxCaroussel1">
