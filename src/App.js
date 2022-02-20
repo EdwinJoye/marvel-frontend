@@ -8,7 +8,6 @@ import LogIn from "./Pages/LogIn";
 import Personnages from "./Pages/Personnages";
 import ComicList from "./Pages/ComicList";
 import { useState } from "react";
-import Footer from "./components/Footer";
 
 function App() {
   const [searchBar, setSearchBar] = useState("");
