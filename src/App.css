@@ -62,15 +62,15 @@ a {
   cursor: pointer;
 }
 .buttonSearch {
-  background-color: transparent;
+  background-color: white;
   height: 40px;
-  width: 200px;
+  width: 300px;
   border-radius: 50px;
-  border: none;
+  border: 2px solid black;
   font-size: 20px;
   padding: 20px;
   margin-left: 20px;
-  border: 1px solid white;
+  opacity: 0.4;
 }
 .boxButtonSignInLogIn {
   display: flex;
@@ -356,6 +356,7 @@ a {
 .boxButtonPrécédenteSuivante {
   display: flex;
   justify-content: center;
+
   /* background-color: aquamarine; */
 }
 .boxEntreButtons {
@@ -369,6 +370,7 @@ a {
   border: none;
   background-color: #ee161e;
   color: white;
+  margin-bottom: 40px;
 }
 .buttonPagePrécédenteSuivante:hover {
   cursor: pointer;

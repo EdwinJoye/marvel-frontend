@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Caroussel1 from "../components/Caroussel1";
 import Caroussel2 from "../components/Caroussel2";
+import Footer from "../components/Footer";
 
 const Home = ({ searchBar }) => {
   // console.log(data.results);
@@ -23,6 +24,7 @@ const Home = ({ searchBar }) => {
           </div>
         </div>
       </Link>
+      <Footer></Footer>
     </div>
   );
 };
