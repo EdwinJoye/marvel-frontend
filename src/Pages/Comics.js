@@ -11,7 +11,7 @@ const Comics = ({ searchBar }) => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `http://localhost:3001/comics?title=${searchBar}&limit=${limit}&page=${page}`
+        `https://online-exam-mern.herokuapp.com/comics?title=${searchBar}&limit=${limit}&page=${page}`
       );
       setData(response.data);
       setIsloading(false);

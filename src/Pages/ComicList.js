@@ -13,7 +13,7 @@ const CommicList = ({ searchBar }) => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `http://localhost:3001/character/${id}?name=${searchBar}&limit=${limit}&page=${page}`
+        `https://online-exam-mern.herokuapp.com/character/${id}?name=${searchBar}&limit=${limit}&page=${page}`
       );
       setData(response.data);
       setIsloading(false);

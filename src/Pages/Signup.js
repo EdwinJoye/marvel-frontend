@@ -10,11 +10,14 @@ const Signup = () => {
   const handleSubmit = async (event) => {
     try {
       event.preventDefault();
-      const response = await axios.post("http://localhost:3001/signup", {
-        email: email,
-        username: username,
-        password: password,
-      });
+      const response = await axios.post(
+        "https://online-exam-mern.herokuapp.com/signup",
+        {
+          email: email,
+          username: username,
+          password: password,
+        }
+      );
       setUsername(response.data.token);
       console.log(response);
     } catch (error) {
