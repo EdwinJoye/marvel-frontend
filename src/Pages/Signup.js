@@ -2,13 +2,9 @@ import axios from "axios";
 import { useState } from "react";
 
 const Signup = () => {
-  // const [data, setData] = (useState = "");
-  // const [surnom, setSurnom] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [confirmpassword, setConfirmPassword] = useState("");
-  // const [newsLetter, setNewsletter] = useState("");
 
   console.log(1);
   const handleSubmit = async (event) => {
