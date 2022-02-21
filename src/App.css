@@ -15,7 +15,8 @@
 html {
   background-image: url(./img/b.webp);
   background-size: cover;
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 * {
@@ -387,6 +388,7 @@ a {
   margin-bottom: 40px;
 }
 .buttonPagePrécédenteSuivante:hover {
+  box-shadow: 0 0 10px black;
   cursor: pointer;
 }
 /*/ ////////////////// COMICARD ////////////////////*/
